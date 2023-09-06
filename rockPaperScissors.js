@@ -1,39 +1,64 @@
-function rockPaperScissors (playerTurn) {
-    const rock = "Rock";
-    const paper = "Paper";
-    const scissors = "Scissors";
+function rockPaperScissors(playerTurn) {
+  const rock = "Rock";
+  const paper = "Paper";
+  const scissors = "Scissors";
 
-    if (playerTurn == "r"  || playerTurn == "Rock") {
-        playerTurn = rock;
-    } else if (playerTurn == "p"  || playerTurn == "Paper") {
-        playerTurn = paper;
-    } else if (playerTurn == "s"  || playerTurn == "Scissors") {
-        playerTurn = scissors;
-    } else {
-        console.log("Invalid Input. Try again...");
+  let isInvalidArg = false; // invalid argument
+
+
+  // player logic
+  if (playerTurn == "r" || playerTurn == "rock") {
+    playerTurn = rock;
+  } else if (playerTurn == "p" || playerTurn == "paper") {
+    playerTurn = paper;
+  } else if (playerTurn == "s" || playerTurn == "scissors") {
+    playerTurn = scissors;
+  } else {
+    isInvalidArg = true;   //<--check for invalid argument
+    console.log("Invalid input. Try again...");
+  }
+
+  if (isInvalidArg != true) {   //<-- check for invalid argument
+    console.log(`You choose ${playerTurn}`);
+  }
+
+  // computer logic
+  let computerRandomNum = Math.floor(Math.random() * 3) + 1;
+
+  if (isInvalidArg != true) {   //<-- check for invalid argument
+    switch (computerRandomNum) {
+      case 1:
+        computerRandomNum = rock;
+        break;
+      case 2:
+        computerRandomNum = paper;
+        break;
+      case 3:
+        computerRandomNum = scissors;
+        break;
     }
+    console.log(`The computer chooses ${computerRandomNum}`);
+  }
+  
 
-    let computerRandomNumber = Math.floor(Math.random() *3 ) + 1;
-
-    switch (computerRandomNumber) {
-        case 1:
-            computerMove = "Rock";
-            break;
-        case 2:
-            omputerMove = "Paper";
-            break;
-        case 3:
-            computerMove = "Scissors";
-            break;
-    }       
-
-    console.log(`The computer chooses ${computerTurn}`);
-
-    if((playerTurn === rock && computerTurn === scissors) || (playerTurn === paper && computerTurn === rock) || (playerTurn === scissors && computerTurn === paper)) {
-        console.log("You win!");
-    } else if () {
-        console.log("You lose!"); 
+  // win or lose logic
+  if (isInvalidArg != true) {    // <-- check for invalid argument
+    if (
+      (computerRandomNum === rock && playerTurn === scissors) ||
+      (computerRandomNum === scissors && playerTurn === paper) ||
+      (computerRandomNum === paper && playerTurn === rock)
+    ) {
+      console.log(`You lose!`);
+    } else if (
+      (playerTurn === rock && computerRandomNum === scissors) ||
+      (playerTurn === scissors && computerRandomNum === paper) ||
+      (playerTurn === paper && computerRandomNum === rock)
+    ) {
+      console.log(`You win!`);
     } else {
-        console.log("This game was a draw");
+      console.log("This game was a draw!");
     }
+  }
 }
+
+rockPaperScissors("invalid argument");
