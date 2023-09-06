@@ -25,3 +25,5 @@ The computer chooses a random option, then reveal the winner.
 ![image](https://user-images.githubusercontent.com/99686592/213935466-583ec447-5c35-4e07-bdab-15cef3a6c9be.png)
 
 we handle all the situations using a series of checks.
+
+Live demo : https://replit.com/@RadinaAvramova/RockPaperScissors#index.js
