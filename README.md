@@ -15,12 +15,15 @@ For the cases when a player types an invalid argument like number for example I 
 The result a player sees:
 
 a.) Normal game
+
 ![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/55e384f7-cb56-4229-8e78-176134d7139b)
 
 b.) Equal result
+
 ![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/55095316-c31d-4b4c-90e7-94b81d6c42f2)
 
 c.) Invalid argument
+
 ![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/73b07e30-8b17-4478-b42e-3018fba62002)
 
 
