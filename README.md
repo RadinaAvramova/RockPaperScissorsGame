@@ -1,37 +1,53 @@
-# The "Rock - Paper - Scissors" Game
-This is a console game project, part of my JS Fundamentals Course in SoftUni.
-For this game I used if-else conditional statements and switch case statements to cover the the different scenarios that can occur during the game:
+# Rock Paper Scissors Game
 
-After the player enters "Rock/Paper/Scissors" or just the letter "r/p/s" this counts for a valid argument and the code follows the implemented logic.
+Welcome to the Rock Paper Scissors Game! This simple game allows players to compete against the computer in the classic game of Rock Paper Scissors. This README will guide you through the installation, rules, and usage of the game.
 
-For the computer's choice I used the "Math.random()" method:
+## Installation
+To play the Rock Paper Scissors Game, you don't need to install anything. You can simply access the game through your web browser. However, if you wish to deploy it on your own server or modify the code, you can follow these steps:
 
-![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/0024d32e-2a99-4680-80eb-6a89d2608989)
+1. **Download or Clone the Repository:** Download the repository as a zip file or clone it using Git:
+git clone https://github.com/RadinaAvramova/RockPaperScissorsGame.git
 
-For the cases when a player types an invalid argument like number for example I used a boolean value. For every if-else/switch statement first I check if the argument is valid and if yes the statement applies it's logic. This way I safe time and make the program faster.
+2. **Deploy to a Web Server:** Upload the files to your web server to make the game accessible online.
 
-![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/3f518527-25b1-4732-b178-c98cf73d1429)
+3. **Open in a Web Browser:**  Access the game by opening the index.html file in your web browser.
 
-The result a player sees:
+## Rules
+The rules of Rock Paper Scissors are simple:
 
-a.) Normal game
+Rock beats Scissors
 
-![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/55e384f7-cb56-4229-8e78-176134d7139b)
+Scissors beats Paper
 
-b.) Equal result
+Paper beats Rock
 
-![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/55095316-c31d-4b4c-90e7-94b81d6c42f2)
+The player and the computer each choose one of the three options (Rock, Paper, or Scissors). The winner is determined based on the choices made:
 
-c.) Invalid argument
+If both players choose the same option, it's a tie.
 
-![image](https://github.com/RadinaAvramova/RockPaperScissorsGame/assets/99686592/73b07e30-8b17-4478-b42e-3018fba62002)
-
-
-
+Otherwise, the winner is determined by the rules mentioned above.
 
 
+## Usage
+Using the Rock Paper Scissors Game is easy:
 
+1. **Open the Game:** Access the game through your web browser.
 
+2. **Choose Your Move:** Click on the button corresponding to your move (Rock, Paper, or Scissors).
 
+3. **See the Result:** The computer will randomly choose its move, and the result of the game will be displayed on the screen.
 
-Live demo : https://replit.com/@RadinaAvramova/RockPaperScissors#index.js
+4. **Play Again:** After each round, you can choose to play again by clicking the "Play Again" button.
+
+## Example
+Here's a simple example demonstrating how to play the Rock Paper Scissors Game:
+
+1.Open the game in your web browser.
+
+2.Click on the "Rock" button to choose Rock as your move.
+
+3.Wait for the computer to make its move.
+
+4.See the result displayed on the screen (Win, Lose, or Tie).
+
+5.Click "Play Again" to start a new round.
